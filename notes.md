@@ -191,7 +191,7 @@ tests/test_pycounts.py .                                                        
 ============================================= 1 passed in 0.00s ==============================================
 ```
 
-# Code Coverage
+## Code Coverage
 
 - uses the `pytest-cov` pytest extension.
 
@@ -203,3 +203,22 @@ poetry add --dev pytest-cov
 
 - call the coverage with `pytest tests/ --cov=pycounts_poetry`
 
+## Documentation
+
+- the numpydoc standard: https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard
+
+### Useage examples using Jupyter
+
+```
+# poetry add --dev jupyter
+# pip install jupyter
+```
+
+- In the book the following lines of code won't work without using the cookie cutter because `__version__` isn't exported (i.g., in the `__init__.py` file).
+
+```python
+import pycounts_poetry
+pycounts_poetry.__version__
+```
+
+- The repo file from the cookiecutter does have it: https://github.com/py-pkgs/py-pkgs-cookiecutter/blob/main/%7B%7B%20cookiecutter.package_name.lower().replace('%20'%2C%20'_').replace('-'%2C%20'_')%20%7D%7D/src/%7B%7B%20cookiecutter.package_name.lower().replace('%20'%2C%20'_').replace('-'%2C%20'_')%20%7D%7D/__init__.py
