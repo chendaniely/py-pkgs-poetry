@@ -190,3 +190,13 @@ tests/test_pycounts.py .                                                        
 
 ============================================= 1 passed in 0.00s ==============================================
 ```
+
+# Code Coverage
+
+- uses the `pytest-cov` pytest extension.
+
+```
+poetry add --dev pytest-cov
+```
+
+- can also install using `pip install pytest-cov`
