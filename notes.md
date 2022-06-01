@@ -200,3 +200,6 @@ poetry add --dev pytest-cov
 ```
 
 - can also install using `pip install pytest-cov`
+
+- call the coverage with `pytest tests/ --cov=pycounts_poetry`
+
